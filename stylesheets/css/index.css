@@ -189,20 +189,6 @@ html {
   }
 }
 
-.main-content .section-light.skills {
-  padding: 100px;
-}
-
-@media (max-width: 599px) {
-  .main-content .section-light.skills {
-    padding: 50px 20px 40px 20px;
-    padding-bottom: 20px;
-  }
-}
-
-.main-content .section-light.skills h1 {
-  padding: 10px;
-}
 
 .main-content .section-light.contact {
   padding: 200px;
@@ -342,7 +328,40 @@ body.preloader-site {
 {color:ghostwhite}
 
 #logo {
+ /*
   max-width: 55%;
   border-radius: 8px;
   float:left;
+*/
+  max-width: 45%;     /* Slightly smaller */
+  border-radius: 8px;
+  margin-left: 1rem;  /* Nudges it a bit inward from the left */
+}
+
+
+:root {
+  --primary: #034C53;
+  --secondary: #007074;
+  --accent: #F38C79;
+  --light-accent: #FFC1B4;
+}
+
+
+.button.is-primary {
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.button.is-primary:hover {
+  background-color: var(--light-accent);
+  border-color: var(--light-accent);
+  color: #034C53;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--light-accent);
 }

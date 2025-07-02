@@ -8,12 +8,11 @@
     <!-- Bulma Version 1-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="./stylesheets/css/index.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.png" />
+    <!-- GLightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
   </head>
 
   <body>
@@ -67,11 +66,6 @@
                 </a>
               </div>
               <div class="navbar-item">
-                <a class="navbar-item" href="#skills">
-                  Skills
-                </a>
-              </div>
-              <div class="navbar-item">
                 <a class="navbar-item" href="#my-work">
                   My Work
                 </a>
@@ -87,16 +81,12 @@
         <!-- End Mobile Nav -->
         <!-- Begin Hero Content-->
         <div class="hero-body">
-          <div class="container has-text-centered">
+          <div class="container has-text-left">
             <img
-            class="is-rounded"
-            id="logo"
-            src="assets/images/IMG_6863.PNG"
-            alt=""
+              id="logo"
+              src="assets/images/IMG_6863.PNG"
+              alt="YaYa Jones Photography Logo"
             />
-            <!-- <h1 class="subtitle">Hey there, I'm</h1>
-            <h2 class="title">YaYa</h2>
-            <h1 class="subtitle profession">Photographer</h1> -->
           </div>
         </div>
         <!-- End Hero Content-->
@@ -114,9 +104,6 @@
                   </li>
                   <li>
                     <a href="#services">Services</a>
-                  </li>
-                  <li>
-                    <a href="#skills">Skills</a>
                   </li>
                   <li>
                     <a href="#my-work">My Work</a>
@@ -138,6 +125,7 @@
     <!-- Begin Main Content -->
     <div class="main-content">
       <!-- Begin About Me Section -->
+
       <div class="section-light about-me" id="about-me">
         <div class="container">
           <div class="column is-12 about-me">
@@ -196,32 +184,7 @@
         </div>
       </div>
       <!-- End About Me Content -->
-      <div class="section-dark resume">
-        <div class="container">
-          <div
-            class="columns is-multiline"
-            data-aos="fade-in"
-            data-aos-easing="linear"
-          >
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">
-                View My Resume
-              </h1>
-            </div>
-            <div class="column is-10 has-text-centered is-offset-1">
-              <h2 class="subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et doloremagna aliqua
-              </h2>
-              <form action="example.docs">
-                <button class="button">
-                  Download Resume&emsp;<i class="fad fa-download fa-lg"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <!-- Begin Services Content -->
       <div class="section-color services" id="services">
         <div class="container">
@@ -320,45 +283,6 @@
         </div>
       </div>
       <!-- End Services Content -->
-      <!-- Begin Skills Content -->
-      <div class="section-light skills" id="skills">
-        <div class="container">
-          <div class="columns is-multiline">
-            <div class="column is-12 about-me">
-              <h1 class="title has-text-centered section-title">Skills</h1>
-            </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1>Adobe Experience Design</h1>
-              <progress class="progress" value="70" max="100">30%</progress>
-              <h1>Adobe After Effects</h1>
-              <progress class="progress" value="65" max="100">30%</progress>
-              <h1>Visual Studio Code</h1>
-              <progress class="progress" value="58" max="100">45%</progress>
-              <h1>Sketch</h1>
-              <progress class="progress" value="90" max="100">60%</progress>
-            </div>
-            <div
-              class="column is-6"
-              data-aos="fade-in"
-              data-aos-easing="linear"
-            >
-              <h1>HTML</h1>
-              <progress class="progress" value="85" max="100">30%</progress>
-              <h1>CSS</h1>
-              <progress class="progress" value="95" max="100">30%</progress>
-              <h1>VueJS</h1>
-              <progress class="progress" value="70" max="100">45%</progress>
-              <h1>React</h1>
-              <progress class="progress" value="60" max="100">60%</progress>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Skills Content -->
       <!-- Begin Work Content -->
       <div class="section-dark my-work" id="my-work">
         <div class="container">
@@ -370,68 +294,45 @@
             <div class="column is-12">
               <h1 class="title has-text-centered section-title">My Work</h1>
             </div>
+
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=0');"
-                ></figure>
+              <a href="assets/images/IMG_2023-Enhanced-NR.jpg" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_2023-Enhanced-NR.jpg'); background-position: center 40%;"></figure>
               </a>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=10');"
-                ></figure>
+              <a href="assets/images/IMG_2951.JPG" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_2951.JPG'); background-position: center 40%;"></figure>
               </a>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=20');"
-                ></figure>
+              <a href="assets/images/IMG_3163-Enhanced-NR.jpg" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_3163-Enhanced-NR.jpg');"></figure>
               </a>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=30');"
-                ></figure>
+              <a href="assets/images/IMG_3726-Enhanced-NR-2-topaz-denoise-faceai-sharpen.jpg" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_3726-Enhanced-NR-2-topaz-denoise-faceai-sharpen.jpg');"></figure>
               </a>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=40');"
-                ></figure>
+              <a href="assets/images/IMG_3740-Enhanced-NR-Edit.jpg" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_3740-Enhanced-NR-Edit.jpg');"></figure>
               </a>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=50');"
-                ></figure>
+              <a href="assets/images/IMG_3809-Enhanced-NR-3.jpg" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_3809-Enhanced-NR-3.jpg');"></figure>
               </a>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=60');"
-                ></figure>
+              <a href="assets/images/IMG_5180-Enhanced-NR-Edit-2.jpg" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_5180-Enhanced-NR-Edit-2.jpg');"></figure>
               </a>
             </div>
             <div class="column is-3">
-              <a href="#">
-                <figure
-                  class="image is-2by1 work-item"
-                  style="background-image: url('https://picsum.photos/320/180?image=70');"
-                ></figure>
+              <a href="assets/images/IMG_8451-Edit.jpg" class="glightbox" data-gallery="work">
+                <figure class="image is-2by1 work-item" style="background-image: url('assets/images/IMG_8451-Edit.jpg');"></figure>
               </a>
             </div>
           </div>
@@ -452,10 +353,7 @@
               </h1>
             </div>
             <div class="column is-8 is-offset-2">
-              <form
-                action="https://formspree.io/email@example.com"
-                method="POST"
-              >
+              <form action="contact.php" method="POST">
                 <div class="field">
                   <label class="label">Name</label>
                   <div class="control has-icons-left">
@@ -524,13 +422,19 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="../js/showcase.js"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
       AOS.init({
         easing: "ease-out",
         duration: 800,
+      });
+    </script>
+    <!-- GLightbox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+      const lightbox = GLightbox({
+        selector: '.glightbox'
       });
     </script>
   </body>
