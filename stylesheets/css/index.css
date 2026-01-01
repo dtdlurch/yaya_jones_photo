@@ -340,11 +340,12 @@ body.preloader-site {
 
 
 :root {
-  --primary: #BD5D2A;
-  --secondary: #D88D83;
-  --accent: #EFA287;
-  --light-accent: #FDBB93;
-  --soft: #F4BBB1;
+  --primary: #034C53;        /* deep teal */
+  --secondary: #007074;      /* teal */
+  --accent: #BD5D2A;         /* logo clay */
+  --light-accent: #EFA287;   /* peach */
+  --soft: #F4BBB1;           /* soft pink */
+  --highlight: #FDBB93;      /* light peach */
 }
 .button.is-primary {
   background-color: var(--accent);
