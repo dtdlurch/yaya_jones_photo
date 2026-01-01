@@ -378,3 +378,45 @@ a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
+/* About Me contact links - prevent overlap on long text */
+.contact-details {
+  margin-top: 0.75rem;
+}
+.contact-details .heading {
+  margin-bottom: 0.25rem;
+}
+.contact-details .subheading,
+.contact-details a {
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+.contact-details a {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: anywhere; /* modern browsers */
+  word-break: break-word;  /* fallback */
+}
+
+/* Ensure the right-side image never gets covered by overflowing text */
+.right-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Booking button spacing + mobile friendliness */
+.book-btn {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+@media (max-width: 768px) {
+  .contact-details .subheading,
+  .contact-details a {
+    font-size: 0.9rem;
+  }
+  .book-btn {
+    width: 100%;
+    max-width: 420px;
+  }
+}
