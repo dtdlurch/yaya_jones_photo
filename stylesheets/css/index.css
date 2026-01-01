@@ -79,27 +79,27 @@ html {
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li.is-active a {
-  border-bottom: 2px solid hwb(164 12% 22%);
+  border-bottom: 2px solid var(--accent);
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a {
-  color: #034C53;
+  color: var(--primary);
 }
 
 .hero .hero-foot .hero-foot--wrapper .hero-menu-desktop ul li a:hover {
-  color: #034C53;
+  color: var(--primary);
   transition: all .2s ease-in-out;
-  border-bottom: 2px solid #034C53;
+  border-bottom: 2px solid var(--primary);
 }
 
 .main-content {
   padding-top: 2rem;
-  color: #007074;
+  color: var(--secondary);
   font-family: 'Poppins', sans-serif;
 }
 
 .main-content .section-dark {
-  background-color: #f0f3f5;
+  background-color: var(--soft);
   padding: 60px 0px;
 }
 
@@ -119,9 +119,9 @@ html {
 }
 
 .main-content .section-dark.resume button {
-  border: 2px solid #F38C79;
+  border: 2px solid var(--accent);
   background: white;
-  color: #F38C79;
+  color: var(--accent);
   height: 50px;
   width: 250px;
   font-size: 1rem;
@@ -129,7 +129,7 @@ html {
 }
 
 .main-content .section-dark.resume .fa-download {
-  color: #034C53;
+  color: var(--primary);
 }
 
 .main-content .section-dark.my-work {
@@ -196,7 +196,7 @@ html {
 
 .main-content .section-light.contact button {
   width: 100%;
-  background-color: #F38C79;
+  background-color: var(--accent);
   color: white;
   height: 50px;
   font-size: 1.1rem;
@@ -212,7 +212,7 @@ html {
 
 .main-content .section-color.services {
   padding: 100px;
-  background-color: #F38C79;
+  background-color: var(--accent);
   color: white;
 }
 
@@ -227,7 +227,7 @@ html {
 }
 
 .main-content .section-title {
-  color: #F38C79;
+  color: var(--accent);
   text-transform: uppercase;
   font-size: 1.8rem;
   letter-spacing: 2px;
@@ -241,7 +241,7 @@ html {
   height: 80px;
   line-height: 25px;
   text-align: center;
-  background: #034C53;
+  background: var(--primary);
   color: whitesmoke;
   padding-top: 2rem;
 }
@@ -261,7 +261,7 @@ html {
 }
 
 .fa-download {
-  color: #F38C79;
+  color: var(--accent);
 }
 
 #toTop {
@@ -287,7 +287,7 @@ html {
 }
 
 #toTop:hover {
-  background-color: #F38C79;
+  background-color: var(--accent);
 }
 
 ::-webkit-scrollbar {
@@ -298,7 +298,7 @@ html {
 ::-webkit-scrollbar-thumb {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #F38C79;
+  background-color: var(--accent);
 }
 
 body.preloader-site {
@@ -308,7 +308,7 @@ body.preloader-site {
 .preloader-wrapper {
   height: 100%;
   width: 100%;
-  background: #034C53;
+  background: var(--primary);
   position: fixed;
   top: 0;
   left: 0;
@@ -340,13 +340,12 @@ body.preloader-site {
 
 
 :root {
-  --primary: #034C53;
-  --secondary: #007074;
-  --accent: #F38C79;
-  --light-accent: #FFC1B4;
+  --primary: #BD5D2A;
+  --secondary: #D88D83;
+  --accent: #EFA287;
+  --light-accent: #FDBB93;
+  --soft: #F4BBB1;
 }
-
-
 .button.is-primary {
   background-color: var(--accent);
   border-color: var(--accent);
@@ -355,7 +354,7 @@ body.preloader-site {
 .button.is-primary:hover {
   background-color: var(--light-accent);
   border-color: var(--light-accent);
-  color: #034C53;
+  color: var(--primary);
 }
 
 a {
@@ -364,4 +363,17 @@ a {
 
 a:hover {
   color: var(--light-accent);
+}
+
+/* --- Custom tweaks --- */
+.service-card hr { margin: 0.75rem auto; width: 60%; }
+.service-title { font-weight: 700; margin-bottom: 0.5rem; }
+.service-desc { text-align: left; font-size: 0.95rem; line-height: 1.5; }
+
+.work-item {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
