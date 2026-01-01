@@ -420,3 +420,41 @@ a:hover {
     max-width: 420px;
   }
 }
+
+
+/* ===== Mobile tweaks ===== */
+@media screen and (max-width: 768px) {
+  /* Center & enlarge logo on mobile */
+  #logo {
+    display: block;
+    margin: 0 auto 1.25rem auto;
+    width: min(260px, 78vw);
+    max-width: 78vw;
+  }
+
+  /* Make the My Work thumbnails swipe-scroll horizontally on mobile
+     (click any image to open lightbox, then swipe within the lightbox) */
+  .my-work .columns.is-multiline {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 0.75rem;
+  }
+
+  .my-work .columns.is-multiline .column {
+    flex: 0 0 80%;
+    max-width: 80%;
+    padding: 0; /* tighten spacing for swipe strip */
+  }
+
+  /* Keep the title/CTA column full width and non-scrollable */
+  .my-work .columns.is-multiline .column.is-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 0 1rem 0;
+  }
+}
